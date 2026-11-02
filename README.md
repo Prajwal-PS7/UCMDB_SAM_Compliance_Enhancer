@@ -1,4 +1,5 @@
-![Uploading Gemini_Generated_Image_i5ey1ei5ey1ei5ey.png…]()
+<img width="2752" height="1536" alt="Gemini_Generated_Image_i5ey1ei5ey1ei5ey" src="https://github.com/user-attachments/assets/543bef4b-0e7c-4f11-bcd5-75217c8d0a4e" />
+
 
 UCMDB SOFTWARE AUTHORIZATION & COMPLIANCE REPORT
 Script : ucmdb_software_compliance.py
