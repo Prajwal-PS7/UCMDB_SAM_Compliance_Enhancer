@@ -1,3 +1,5 @@
+![Uploading Gemini_Generated_Image_i5ey1ei5ey1ei5ey.png…]()
+
 UCMDB SOFTWARE AUTHORIZATION & COMPLIANCE REPORT
 Script : ucmdb_software_compliance.py
 Target : Micro Focus / OpenText UCMDB v25.4 (REST API)
