@@ -1,0 +1,29 @@
+Hostname,IP Address,Serial,Software Name,Version,Software Type,Subscription Type,Authorization,Compliance,Reason
+hosttest01,192.168.56.20,TEST091SERIAL,7-Zip,26.01,Freeware,Freeware,Authorized,Compliant,approved version; version >= minimum 26.01
+hosttest01,192.168.56.20,TEST091SERIAL,Microsoft Edge,139.0.3405.102,Freeware,Freeware,Unauthorized,Non-Compliant,version not in approved list (153.0.4234.48); version < minimum 153.0.4234.48
+hosttest01,192.168.56.20,TEST091SERIAL,Microsoft Edge,139.0.3405.102,Freeware,Freeware,Unauthorized,Non-Compliant,version not in approved list (153.0.4234.48); version < minimum 153.0.4234.48
+hosttest01,192.168.56.20,TEST091SERIAL,Microsoft Edge,142.0.3595.94,Freeware,Freeware,Unauthorized,Non-Compliant,version not in approved list (153.0.4234.48); version < minimum 153.0.4234.48
+hosttest01,192.168.56.20,TEST091SERIAL,Microsoft Edge,145.0.3800.70,Freeware,Freeware,Unauthorized,Non-Compliant,version not in approved list (153.0.4234.48); version < minimum 153.0.4234.48
+hosttest01,192.168.56.20,TEST091SERIAL,Microsoft Edge,149.0.4022.62,Freeware,Freeware,Unauthorized,Non-Compliant,version not in approved list (153.0.4234.48); version < minimum 153.0.4234.48
+hosttest01,192.168.56.20,TEST091SERIAL,Microsoft Edge,149.0.4022.62,Freeware,Freeware,Unauthorized,Non-Compliant,version not in approved list (153.0.4234.48); version < minimum 153.0.4234.48
+hosttest01,192.168.56.20,TEST091SERIAL,Microsoft Edge,149.0.4022.62,Freeware,Freeware,Unauthorized,Non-Compliant,version not in approved list (153.0.4234.48); version < minimum 153.0.4234.48
+hosttest01,192.168.56.20,TEST091SERIAL,Microsoft Edge,149.0.4022.62,Freeware,Freeware,Unauthorized,Non-Compliant,version not in approved list (153.0.4234.48); version < minimum 153.0.4234.48
+hosttest01,192.168.56.20,TEST091SERIAL,Universal Discovery Agent,25.4.000.98,Licensed,Perpetual,Authorized,Compliant,approved version; version >= minimum 25.4.000.98
+hosttest01,192.168.56.20,TEST091SERIAL,Universal Discovery Agent,25.4.98.0,Licensed,Perpetual,Unauthorized,Compliant,version not in approved list (25.4.000.98); version >= minimum 25.4.000.98
+hosttest01,192.168.56.20,TEST091SERIAL,Universal Discovery Agent,25.4.98.0,Licensed,Perpetual,Unauthorized,Compliant,version not in approved list (25.4.000.98); version >= minimum 25.4.000.98
+hosttest02,192.168.56.25,TEST6273SERIAL,7-Zip,25.01,Freeware,Freeware,Unauthorized,Non-Compliant,version not in approved list (26.01); version < minimum 26.01
+hosttest02,192.168.56.25,TEST6273SERIAL,7-Zip,26.01,Freeware,Freeware,Authorized,Compliant,approved version; version >= minimum 26.01
+hosttest02,192.168.56.25,TEST6273SERIAL,Microsoft Edge,140.0.3485.66,Freeware,Freeware,Unauthorized,Non-Compliant,version not in approved list (153.0.4234.48); version < minimum 153.0.4234.48
+hosttest02,192.168.56.25,TEST6273SERIAL,Microsoft Edge,140.0.3485.66,Freeware,Freeware,Unauthorized,Non-Compliant,version not in approved list (153.0.4234.48); version < minimum 153.0.4234.48
+hosttest02,192.168.56.25,TEST6273SERIAL,Microsoft Edge,145.0.3800.70,Freeware,Freeware,Unauthorized,Non-Compliant,version not in approved list (153.0.4234.48); version < minimum 153.0.4234.48
+hosttest02,192.168.56.25,TEST6273SERIAL,Microsoft Edge,145.0.3800.70,Freeware,Freeware,Unauthorized,Non-Compliant,version not in approved list (153.0.4234.48); version < minimum 153.0.4234.48
+hosttest02,192.168.56.25,TEST6273SERIAL,Microsoft Edge,145.0.3800.70,Freeware,Freeware,Unauthorized,Non-Compliant,version not in approved list (153.0.4234.48); version < minimum 153.0.4234.48
+hosttest02,192.168.56.25,TEST6273SERIAL,Microsoft Edge,145.0.3800.70,Freeware,Freeware,Unauthorized,Non-Compliant,version not in approved list (153.0.4234.48); version < minimum 153.0.4234.48
+hosttest02,192.168.56.25,TEST6273SERIAL,Microsoft Edge,149.0.4022.62,Freeware,Freeware,Unauthorized,Non-Compliant,version not in approved list (153.0.4234.48); version < minimum 153.0.4234.48
+hosttest02,192.168.56.25,TEST6273SERIAL,Microsoft Edge,149.0.4022.62,Freeware,Freeware,Unauthorized,Non-Compliant,version not in approved list (153.0.4234.48); version < minimum 153.0.4234.48
+hosttest02,192.168.56.25,TEST6273SERIAL,Microsoft Edge,149.0.4022.62,Freeware,Freeware,Unauthorized,Non-Compliant,version not in approved list (153.0.4234.48); version < minimum 153.0.4234.48
+hosttest02,192.168.56.25,TEST6273SERIAL,Microsoft Edge,149.0.4022.62,Freeware,Freeware,Unauthorized,Non-Compliant,version not in approved list (153.0.4234.48); version < minimum 153.0.4234.48
+hosttest02,192.168.56.25,TEST6273SERIAL,Universal Discovery Agent,25.4.000.98,Licensed,Perpetual,Authorized,Compliant,approved version; version >= minimum 25.4.000.98
+hosttest02,192.168.56.25,TEST6273SERIAL,Universal Discovery Agent,25.4.98.0,Licensed,Perpetual,Unauthorized,Compliant,version not in approved list (25.4.000.98); version >= minimum 25.4.000.98
+hosttest02,192.168.56.25,TEST6273SERIAL,Universal Discovery Agent,25.4.98.0,Licensed,Perpetual,Unauthorized,Compliant,version not in approved list (25.4.000.98); version >= minimum 25.4.000.98
+ 

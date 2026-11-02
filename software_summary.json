@@ -1,0 +1,21 @@
+{
+  "mode": "read_only",
+  "generated": "20261102_122840",
+  "total_unique_cis": 32,
+  "total_relations": 30,
+  "ci_types": {
+    "ip_address": 3,
+    "nt": 2,
+    "installed_software": 27
+  },
+  "computers_with_software": 2,
+  "software_records_reported": 27,
+  "unresolved": 0,
+  "counts": {
+    "authorized": 4,
+    "compliant": 8,
+    "unauthorized": 23,
+    "non_compliant": 19
+  }
+}
+ 

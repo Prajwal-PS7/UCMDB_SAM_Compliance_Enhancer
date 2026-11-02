@@ -1,0 +1,4 @@
+Hostname,IP Address,Serial,Total Software,Authorized,Unauthorized,Compliant,Non-Compliant,Computer Status
+hosttest01,192.168.56.20,TEST091SERIAL,12,2,10,4,8,Non-Compliant
+hosttest02,192.168.56.25,TEST6273SERIAL,15,2,13,4,11,Non-Compliant
+ 
