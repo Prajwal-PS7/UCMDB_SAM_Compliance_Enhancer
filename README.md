@@ -3,9 +3,9 @@
 
 ## UCMDB Software Authorization & Compliance Report
 
-🔹 Script : ucmdb_software_compliance.py <br/>
-🔹 Target : Micro Focus / OpenText UCMDB v25.4 & upper (REST API) <br/>
-🔹 Mode   : READ ONLY - the script never creates, updates or deletes any CI <br/>
+🔹 **Script** : ucmdb_software_compliance.py <br/>
+🔹 **Target** : Micro Focus / OpenText UCMDB v25.4 & upper (REST API) <br/>
+🔹 **Mode**   : READ ONLY - the script never creates, updates or deletes any CI <br/>
 
 ## 1. PURPOSE
 
