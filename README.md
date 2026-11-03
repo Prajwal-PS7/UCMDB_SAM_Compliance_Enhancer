@@ -11,18 +11,18 @@
 
 <p> UCMDB / SAM cannot natively classify software by version-based authorization and compliance, or hold the extra classifications the customer needs. This script fills that gap. It pulls computers and their installed software from UCMDB through a TQL, compares each software item against a maintained catalog, and produces reports with these columns:</p>
 
-  ✅ Computer  - Hostname, IP Address, Serial <br/>
-  ✅ Software  - Name, Version, Publisher, Software Type, Subscription Type, Authorization, Compliance, Reason
+  ✅ **Computer**  - Hostname, IP Address, Serial <br/>
+  ✅ **Software**  - Name, Version, Publisher, Software Type, Subscription Type, Authorization, Compliance, Reason
 
 ## 2. HOW THE DECISIONS ARE MADE (VERSION BASED)
 
-* **AUTHORIZED**    : <p> Software is in the catalog AND the installed version exactly matches one of its "approved_versions". </p>
+* **AUTHORIZED**    : Software is in the catalog AND the installed version exactly matches one of its "approved_versions".
 
-* **UNAUTHORIZED**  : <p> Software is not in the catalog, OR its version is not in the approved list, OR the version is missing. </p>
+* **UNAUTHORIZED**  : Software is not in the catalog, OR its version is not in the approved list, OR the version is missing.
 
-* **COMPLIANT**     : <p> Software is in the catalog AND installed version is greater than or equal to "min_version" (updated version). </p>
+* **COMPLIANT**     : Software is in the catalog AND installed version is greater than or equal to "min_version" (updated version).
 
-* **NON-COMPLIANT** : <p> Installed version is lower than "min_version" (outdated), OR software is not in the catalog, OR version is missing. </p>
+* **NON-COMPLIANT** : Installed version is lower than "min_version" (outdated), OR software is not in the catalog, OR version is missing.
 
 Notes
   - Authorization uses the EXACT version text (26.01 stays 26.01).
