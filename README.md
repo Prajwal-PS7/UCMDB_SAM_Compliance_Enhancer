@@ -21,28 +21,25 @@
 * **COMPLIANT**     : Software is in the catalog AND installed version is greater than or equal to "min_version" (updated version).
 * **NON-COMPLIANT** : Installed version is lower than "min_version" (outdated), OR software is not in the catalog, OR version is missing.
 
-Notes
-  - Authorization uses the EXACT version text (26.01 stays 26.01).
-  - Compliance compares versions number by number, e.g.
-        10,2,0,7549  ->  10.2.0.7549
-        25.4.000.98  ->  25.4.0.98
+**Notes**
+ 🔹 Authorization uses the EXACT version text (26.01 stays 26.01).
+ 🔹 Compliance compares versions number by number, e.g. <br/>
+        10,2,0,7549  ->  10.2.0.7549 <br/>
+        25.4.000.98  ->  25.4.0.98 <br/>
     so 25.10 is correctly newer than 25.4.
-  - Name matching is case-insensitive. An exact name matches, and so does a prefix: "7-Zip 26.01 (x64)" matches the catalog entry "7-Zip".
-  - Software that cannot be linked to a computer is NOT marked Unauthorized. It is listed separately as "unresolved".
+ 🔹 Name matching is case-insensitive. An exact name matches, and so does a prefix: "7-Zip 26.01 (x64)" matches the catalog entry "7-Zip".
+ 🔹 Software that cannot be linked to a computer is NOT marked Unauthorized. It is listed separately as "unresolved".
 
---------------------------------------------------------------------------------
-3. REQUIREMENTS
---------------------------------------------------------------------------------
-  - Python 3.8 or newer
-  - Python packages:      pip install requests urllib3
-  - Optional (Excel):     pip install openpyxl (without openpyxl the script still writes CSV and JSON, and prints a note)
-  - Network access from the machine running the script to the UCMDB server (default https://localhost.localdomain.com:8443)
-  - A UCMDB user with permission to call the REST API and run the TQL
+## 3. REQUIREMENTS
+  🔹 Python 3.8 or newer
+  🔹 Python packages:      pip install requests urllib3
+  🔹 Optional (Excel):     pip install openpyxl (without openpyxl the script still writes CSV and JSON, and prints a note)
+  🔹 Network access from the machine running the script to the UCMDB server (default https://localhost.localdomain.com:8443)
+  🔹 A UCMDB user with permission to call the REST API and run the TQL
 
---------------------------------------------------------------------------------
-4. UCMDB-SIDE SETUP (ONE TIME)
---------------------------------------------------------------------------------
-Create (or verify) a TQL named:   software_version_compliance
+## 4. UCMDB-SIDE SETUP (ONE TIME)
+
+**Create (or verify) a TQL named:**   software_version_compliance
 
 Required structure
     Node  --(Composition)-->  InstalledSoftware         (required)
