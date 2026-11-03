@@ -62,24 +62,24 @@
 
 ## 5. CONFIGURATION (TOP OF THE SCRIPT)
 ```
-  SERVER_URL                 UCMDB server URL and port
-  API_PATH                   REST path, normally /rest-api
-  USERNAME                   UCMDB user (default: admin)
-  PASSWORD_ENV_VAR           Name of environment variable holding the password (default: UCMDB_PASSWORD)
-  TQL_NAME                   Name of the TQL
-  PAGINATION_ROOT            TQL node label used for chunking
-  CHUNK_SIZE                 Records per server chunk (default 100)
-  VERIFY_SSL                 False = testing only. Production: True, or the path to a trusted CA bundle file
-  SOFTWARE_CI_TYPE           CI type of installed software (installed_software)
-  IP_CI_TYPE                 CI type of IP addresses (ip_address)
-  *_ATTRS tuples             Attribute names tried (in order) for software name, version, publisher, hostname, serial and IP. Edit if your model uses different names.
-  EXCLUDE_IPV6               True = ignore IPv6 addresses
-  EXCLUDE_IP_PREFIXES        IPs starting with these are ignored (127., 169.254.)
-  REPORT_UNLISTED_SOFTWARE   True  = software not in catalog is reported as Unauthorized / Non-Compliant
-                             False = only catalog software is reported
-  IGNORE_NAME_PATTERNS       List of text fragments; software whose name contains any of them is skipped, e.g.
-                             ["Security Update", "Redistributable"]
-  SOFTWARE_CATALOG           The approved software list (see section 6)
+    SERVER_URL                 UCMDB server URL and port
+    API_PATH                   REST path, normally /rest-api
+    USERNAME                   UCMDB user (default: admin)
+    PASSWORD_ENV_VAR           Name of environment variable holding the password (default: UCMDB_PASSWORD)
+    TQL_NAME                   Name of the TQL
+    PAGINATION_ROOT            TQL node label used for chunking
+    CHUNK_SIZE                 Records per server chunk (default 100)
+    VERIFY_SSL                 False = testing only. Production: True, or the path to a trusted CA bundle file
+    SOFTWARE_CI_TYPE           CI type of installed software (installed_software)
+    IP_CI_TYPE                 CI type of IP addresses (ip_address)
+    *_ATTRS tuples             Attribute names tried (in order) for software name, version, publisher, hostname, serial and IP. Edit if your model uses different names.
+    EXCLUDE_IPV6               True = ignore IPv6 addresses
+    EXCLUDE_IP_PREFIXES        IPs starting with these are ignored (127., 169.254.)
+    REPORT_UNLISTED_SOFTWARE   True  = software not in catalog is reported as Unauthorized / Non-Compliant
+                               False = only catalog software is reported
+    IGNORE_NAME_PATTERNS       List of text fragments; software whose name contains any of them is skipped, e.g.
+                               ["Security Update", "Redistributable"]
+    SOFTWARE_CATALOG           The approved software list (see section 6)
 ```
 
 ## 6. MAINTAINING THE SOFTWARE CATALOG
@@ -96,34 +96,32 @@
     },
 ```
 ```
-  name               Official product name (also used for matching)
-  aliases            Other display names / prefixes seen in UCMDB
-  approved_versions  Exact version strings that count as AUTHORIZED
-  min_version        Lowest version that counts as COMPLIANT
-  software_type      Freeware / Commercial / Licensed
-  subscription_type  Freeware / Perpetual / Annual Subscription / etc.
+    name               Official product name (also used for matching)
+    aliases            Other display names / prefixes seen in UCMDB
+    approved_versions  Exact version strings that count as AUTHORIZED
+    min_version        Lowest version that counts as COMPLIANT
+    software_type      Freeware / Commercial / Licensed
+    subscription_type  Freeware / Perpetual / Annual Subscription / etc.
 ```
 ```
-To approve a new version      add it to approved_versions
-To make an old version stale  raise min_version
-To add new software           copy an entry and change the values
+    To approve a new version      add it to approved_versions
+    To make an old version stale  raise min_version
+    To add new software           copy an entry and change the values
 ```
 
 *The catalog is the single source of truth. Review it whenever a new version is approved or a contract changes.*
 
---------------------------------------------------------------------------------
-7. HOW TO RUN
---------------------------------------------------------------------------------
-Interactive (asks for the password; nothing is echoed):
+## 7. HOW TO RUN
+**Interactive (asks for the password; nothing is echoed):**
+```python ucmdb_software_compliance.py```
 
-    python ucmdb_software_compliance.py
-
-Unattended / scheduled run - set the password in the environment first.
+**Unattended / scheduled run - set the password in the environment first.**
 
   Windows (Command Prompt):
+  ```bash
     set UCMDB_PASSWORD=your_password
     python ucmdb_software_compliance.py
-
+  ```
   Windows (PowerShell):
     $env:UCMDB_PASSWORD = "your_password"
     python ucmdb_software_compliance.py
