@@ -56,13 +56,12 @@ Node  --(Containment)-->  IpAddress                 (optional, for IPs)
     InstalledSoftware  name, display_label, version, publisher (publisher is optional)
     IpAddress          name
 ```
-**Other settings**
-  🔹 Query node label of the pagination root must be exactly ```InstalledSoftware``` (this is the TQL node label, not the CI type name).
+**Other settings** <br/>
+  🔹 Query node label of the pagination root must be exactly ```InstalledSoftware``` (this is the TQL node label, not the CI type name). <br/>
   🔹 Make sure relationships are included in the query result. Without relations the script cannot link software to computers.
 
---------------------------------------------------------------------------------
-5. CONFIGURATION (TOP OF THE SCRIPT)
---------------------------------------------------------------------------------
+## 5. CONFIGURATION (TOP OF THE SCRIPT)
+```
   SERVER_URL                 UCMDB server URL and port
   API_PATH                   REST path, normally /rest-api
   USERNAME                   UCMDB user (default: admin)
@@ -81,12 +80,12 @@ Node  --(Containment)-->  IpAddress                 (optional, for IPs)
   IGNORE_NAME_PATTERNS       List of text fragments; software whose name contains any of them is skipped, e.g.
                              ["Security Update", "Redistributable"]
   SOFTWARE_CATALOG           The approved software list (see section 6)
+```
 
---------------------------------------------------------------------------------
-6. MAINTAINING THE SOFTWARE CATALOG
---------------------------------------------------------------------------------
-Each catalog entry looks like this:
+## 6. MAINTAINING THE SOFTWARE CATALOG
 
+**Each catalog entry looks like this:**
+```
     {
         "name": "7-Zip",
         "aliases": [],
@@ -95,19 +94,22 @@ Each catalog entry looks like this:
         "software_type": "Freeware",
         "subscription_type": "Freeware",
     },
-
+```
+```
   name               Official product name (also used for matching)
   aliases            Other display names / prefixes seen in UCMDB
   approved_versions  Exact version strings that count as AUTHORIZED
   min_version        Lowest version that counts as COMPLIANT
   software_type      Freeware / Commercial / Licensed
   subscription_type  Freeware / Perpetual / Annual Subscription / etc.
-
+```
+```
 To approve a new version      add it to approved_versions
 To make an old version stale  raise min_version
 To add new software           copy an entry and change the values
+```
 
-The catalog is the single source of truth. Review it whenever a new version is approved or a contract changes.
+*The catalog is the single source of truth. Review it whenever a new version is approved or a contract changes.*
 
 --------------------------------------------------------------------------------
 7. HOW TO RUN
