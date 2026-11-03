@@ -118,24 +118,23 @@
 **Unattended / scheduled run - set the password in the environment first.**
 
   > Windows (Command Prompt):
-  <br/>
-  ```powershell
+  ```
     set UCMDB_PASSWORD=your_password
     python ucmdb_software_compliance.py
   ```
-  <br/>
+
   > Windows (PowerShell):
-    ```powershell
+    ```
     $env:UCMDB_PASSWORD = "your_password"
     python ucmdb_software_compliance.py
     ```
-  <br/>
+
   > Linux:
-    ```shell
+    ```
     export UCMDB_PASSWORD='your_password'
     python3 ucmdb_software_compliance.py
     ```
-  <br/>
+
 For scheduling use Windows Task Scheduler or cron. Prefer a secured secret
 store over a plain-text password where possible.
 
