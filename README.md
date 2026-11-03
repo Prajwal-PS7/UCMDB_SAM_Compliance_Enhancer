@@ -56,9 +56,9 @@ Node  --(Containment)-->  IpAddress                 (optional, for IPs)
     InstalledSoftware  name, display_label, version, publisher (publisher is optional)
     IpAddress          name
 ```
-Other settings
-  - Query node label of the pagination root must be exactly "InstalledSoftware" (this is the TQL node label, not the CI type name).
-  - Make sure relationships are included in the query result. Without relations the script cannot link software to computers.
+**Other settings**
+  🔹 Query node label of the pagination root must be exactly ```InstalledSoftware``` (this is the TQL node label, not the CI type name).
+  🔹 Make sure relationships are included in the query result. Without relations the script cannot link software to computers.
 
 --------------------------------------------------------------------------------
 5. CONFIGURATION (TOP OF THE SCRIPT)
