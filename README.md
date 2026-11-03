@@ -222,11 +222,11 @@ All files are written next to the script. ```<stamp> = YYYYMMDD_HHMMSS```.
   - Only software that the TQL returns is evaluated.
 
 ## 12. QUICK START CHECKLIST
-  [ ] Python 3.8+ installed; pip install requests urllib3 openpyxl
-  [ ] TQL software_version_compliance created with relations and attributes
-  [ ] SERVER_URL, USERNAME, TQL_NAME set in the script
-  [ ] SOFTWARE_CATALOG reviewed and approved by the customer
-  [ ] Test run; check Unresolved sheet and raw_chunks if anything is blank
-  [ ] VERIFY_SSL set properly for production
-  [ ] Schedule the run if needed
+  [ ] Python 3.8+ installed; pip install requests urllib3 openpyxl <br/>
+  [ ] TQL software_version_compliance created with relations and attributes <br/>
+  [ ] SERVER_URL, USERNAME, TQL_NAME set in the script <br/>
+  [ ] SOFTWARE_CATALOG reviewed and approved by the customer <br/>
+  [ ] Test run; check Unresolved sheet and raw_chunks if anything is blank <br/>
+  [ ] VERIFY_SSL set properly for production <br/>
+  [ ] Schedule the run if needed <br/>
 
