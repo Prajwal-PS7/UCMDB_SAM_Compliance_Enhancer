@@ -14,9 +14,8 @@
   ✅ Computer  - Hostname, IP Address, Serial <br/>
   ✅ Software  - Name, Version, Publisher, Software Type, Subscription Type, Authorization, Compliance, Reason
 
---------------------------------------------------------------------------------
-2. HOW THE DECISIONS ARE MADE (VERSION BASED)
---------------------------------------------------------------------------------
+## 2. HOW THE DECISIONS ARE MADE (VERSION BASED)
+
   AUTHORIZED     Software is in the catalog AND the installed version exactly matches one of its "approved_versions".
 
   UNAUTHORIZED   Software is not in the catalog, OR its version is not in the approved list, OR the version is missing.
