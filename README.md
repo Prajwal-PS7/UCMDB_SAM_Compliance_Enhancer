@@ -132,6 +132,8 @@
   > Linux:
   ```
     export UCMDB_PASSWORD='your_password'
+  ```
+  ```
     python3 ucmdb_software_compliance.py
   ```
 
