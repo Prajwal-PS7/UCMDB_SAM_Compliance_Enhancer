@@ -11,7 +11,7 @@
 
 <p> UCMDB / SAM cannot natively classify software by version-based authorization and compliance, or hold the extra classifications the customer needs. This script fills that gap. It pulls computers and their installed software from UCMDB through a TQL, compares each software item against a maintained catalog, and produces reports with these columns:</p>
 
-  ✅ Computer  - Hostname, IP Address, Serial
+  ✅ Computer  - Hostname, IP Address, Serial <br/>
   ✅ Software  - Name, Version, Publisher, Software Type, Subscription Type, Authorization, Compliance, Reason
 
 --------------------------------------------------------------------------------
