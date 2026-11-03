@@ -26,9 +26,9 @@
  🔹 Compliance compares versions number by number, e.g. <br/>
  
    ```
-   10,2,0,7549  ->  10.2.0.7549
-   25.4.000.98  ->  25.4.0.98
-   so 25.10 is correctly newer than 25.4.
+       10,2,0,7549  ->  10.2.0.7549
+       25.4.000.98  ->  25.4.0.98
+    so 25.10 is correctly newer than 25.4.
    ```
    
  🔹 Name matching is case-insensitive. An exact name matches, and so does a prefix: "7-Zip 26.01 (x64)" matches the catalog entry "7-Zip". <br/>
@@ -46,8 +46,8 @@
 **Create (or verify) a TQL named:**   ```software_version_compliance```
 **Required structure**
 ```
-Node  --(Composition)-->  InstalledSoftware         (required)
-Node  --(Containment)-->  IpAddress                 (optional, for IPs)
+    Node  --(Composition)-->  InstalledSoftware         (required)
+    Node  --(Containment)-->  IpAddress                 (optional, for IPs)
 ```
 
 **Query layout - attributes that must be returned**
