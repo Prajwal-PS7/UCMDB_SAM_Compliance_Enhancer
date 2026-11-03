@@ -135,14 +135,14 @@
     python3 ucmdb_software_compliance.py
   ```
 
-For scheduling use Windows Task Scheduler or cron. Prefer a secured secret
-store over a plain-text password where possible.
+*For scheduling use Windows Task Scheduler or cron. Prefer a secured secret store over a plain-text password where possible.*
 
 Exit codes
+```
     0    completed
     1    failed (see the ERROR line and software_run_status.json)
     130  interrupted by the user (Ctrl+C)
-
+```
 
 --------------------------------------------------------------------------------
 8. OUTPUT FILES
