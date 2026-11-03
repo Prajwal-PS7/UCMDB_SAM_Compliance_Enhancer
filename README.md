@@ -122,13 +122,16 @@
     set UCMDB_PASSWORD=your_password
     python ucmdb_software_compliance.py
   ```
-  Windows (PowerShell):
+  > Windows (PowerShell):
+    ```powershell
     $env:UCMDB_PASSWORD = "your_password"
     python ucmdb_software_compliance.py
-
-  Linux:
+    ```
+  > Linux:
+    ```shell
     export UCMDB_PASSWORD='your_password'
     python3 ucmdb_software_compliance.py
+    ```
 
 For scheduling use Windows Task Scheduler or cron. Prefer a secured secret
 store over a plain-text password where possible.
