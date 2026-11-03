@@ -118,6 +118,7 @@
 **Unattended / scheduled run - set the password in the environment first.**
 
   > Windows (Command Prompt):
+  <br/>
   ```powershell
     set UCMDB_PASSWORD=your_password
     python ucmdb_software_compliance.py
