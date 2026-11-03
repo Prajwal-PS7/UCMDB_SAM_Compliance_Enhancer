@@ -1,19 +1,15 @@
 # UCMDB SAM Compliance Enhancer (REST API)
 <img width="2752" height="1536" alt="Gemini_Generated_Image_i5ey1ei5ey1ei5ey" src="https://github.com/user-attachments/assets/543bef4b-0e7c-4f11-bcd5-75217c8d0a4e" />
 
-
-
-
 ## UCMDB Software Authorization & Compliance Report
 
 🔹 Script : ucmdb_software_compliance.py <br/>
 🔹 Target : Micro Focus / OpenText UCMDB v25.4 & upper (REST API) <br/>
 🔹 Mode   : READ ONLY - the script never creates, updates or deletes any CI <br/>
 
---------------------------------------------------------------------------------
-1. PURPOSE
---------------------------------------------------------------------------------
-UCMDB / SAM cannot natively classify software by version-based authorization and compliance, or hold the extra classifications the customer needs. This script fills that gap. It pulls computers and their installed software from UCMDB through a TQL, compares each software item against a maintained catalog, and produces reports with these columns:
+## 1. PURPOSE
+
+<p> UCMDB / SAM cannot natively classify software by version-based authorization and compliance, or hold the extra classifications the customer needs. This script fills that gap. It pulls computers and their installed software from UCMDB through a TQL, compares each software item against a maintained catalog, and produces reports with these columns:</p>
 
   Computer  : Hostname, IP Address, Serial
   Software  : Name, Version, Publisher, Software Type, Subscription Type, Authorization, Compliance, Reason
