@@ -26,16 +26,16 @@
  🔹 Compliance compares versions number by number, e.g. <br/>
         <tb/> 10,2,0,7549  ->  10.2.0.7549 <br/>
         <tb/> 25.4.000.98  ->  25.4.0.98 <br/>
-    so 25.10 is correctly newer than 25.4. 
- 🔹 Name matching is case-insensitive. An exact name matches, and so does a prefix: "7-Zip 26.01 (x64)" matches the catalog entry "7-Zip".
- 🔹 Software that cannot be linked to a computer is NOT marked Unauthorized. It is listed separately as "unresolved".
+    <tb/> so 25.10 is correctly newer than 25.4. 
+ 🔹 Name matching is case-insensitive. An exact name matches, and so does a prefix: "7-Zip 26.01 (x64)" matches the catalog entry "7-Zip". <br/>
+ 🔹 Software that cannot be linked to a computer is NOT marked Unauthorized. It is listed separately as "unresolved". <br/>
 
 ## 3. REQUIREMENTS
-  🔹 Python 3.8 or newer
-  🔹 Python packages:      pip install requests urllib3
-  🔹 Optional (Excel):     pip install openpyxl (without openpyxl the script still writes CSV and JSON, and prints a note)
-  🔹 Network access from the machine running the script to the UCMDB server (default https://localhost.localdomain.com:8443)
-  🔹 A UCMDB user with permission to call the REST API and run the TQL
+  🔹 Python 3.8 or newer <br/>
+  🔹 Python packages:      pip install requests urllib3 <br/>
+  🔹 Optional (Excel):     pip install openpyxl (without openpyxl the script still writes CSV and JSON, and prints a note) <br/>
+  🔹 Network access from the machine running the script to the UCMDB server (default https://localhost.localdomain.com:8443) <br/>
+  🔹 A UCMDB user with permission to call the REST API and run the TQL <br/>
 
 ## 4. UCMDB-SIDE SETUP (ONE TIME)
 
