@@ -173,11 +173,10 @@ All files are written next to the script. ```<stamp> = YYYYMMDD_HHMMSS```.
 
 > "Computer Status" in the summary is Compliant only when every software item on that computer is both Authorized and Compliant.
 
---------------------------------------------------------------------------------
-9. TROUBLESHOOTING / HELP
---------------------------------------------------------------------------------
-Problem: "TLS certificate verification failed"
-  Fix:   Set VERIFY_SSL to True and install the server certificate chain, or set VERIFY_SSL to the path of a CA bundle file.
+## 9. TROUBLESHOOTING / HELP
+
+**Problem: "TLS certificate verification failed"**
+  > Fix:   Set VERIFY_SSL to True and install the server certificate chain, or set VERIFY_SSL to the path of a CA bundle file.
 
 Problem: HTTP 401 on authenticate
   Fix:   Wrong username/password, or the account is locked. Check USERNAME and the password / UCMDB_PASSWORD value.
