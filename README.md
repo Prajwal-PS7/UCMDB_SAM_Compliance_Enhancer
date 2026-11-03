@@ -45,7 +45,7 @@
 
 **Create (or verify) a TQL named:**   ```software_version_compliance```
 **Required structure**
-```    Node  --(Composition)-->  InstalledSoftware         (required)
+```    Node  --(Composition)-->  InstalledSoftware         (required) <br/>
     Node  --(Containment)-->  IpAddress                 (optional, for IPs)
 ```
 Query layout - attributes that must be returned
