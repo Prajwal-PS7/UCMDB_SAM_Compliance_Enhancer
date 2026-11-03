@@ -9,7 +9,7 @@
 
 ## 1. PURPOSE
 
-<p> UCMDB / SAM cannot natively classify software by version-based authorization and compliance, or hold the extra classifications the customer needs. This script fills that gap. It pulls computers and their installed software from UCMDB through a TQL, compares each software item against a maintained catalog, and produces reports with these columns:</p>
+<p> UCMDB / SAM cannot natively classify software by version-based authorization and compliance, or hold the extra classifications the customer needs. This script fills that gap. It pulls computers and their installed software from UCMDB through a TQL, compares each software item against a maintained catalog, and produces reports with these columns: </p>
 
   ✅ **Computer**  - Hostname, IP Address, Serial <br/>
   ✅ **Software**  - Name, Version, Publisher, Software Type, Subscription Type, Authorization, Compliance, Reason
@@ -37,8 +37,8 @@
 ## 3. REQUIREMENTS
   🔹 Python 3.8 or newer <br/>
   🔹 Python packages:      ```pip install requests urllib3``` <br/>
-  🔹 Optional (Excel):     pip install openpyxl (without openpyxl the script still writes CSV and JSON, and prints a note) <br/>
-  🔹 Network access from the machine running the script to the UCMDB server (default https://localhost.localdomain.com:8443) <br/>
+  🔹 Optional (Excel):     ```pip install openpyxl``` (without openpyxl the script still writes CSV and JSON, and prints a note) <br/>
+  🔹 Network access from the machine running the script to the UCMDB server ```(default https://localhost.localdomain.com:8443)``` <br/>
   🔹 A UCMDB user with permission to call the REST API and run the TQL <br/>
 
 ## 4. UCMDB-SIDE SETUP (ONE TIME)
