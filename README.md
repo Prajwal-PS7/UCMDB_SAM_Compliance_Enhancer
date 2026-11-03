@@ -1,11 +1,14 @@
+# UCMDB SAM Compliance Enhancer (REST API)
 <img width="2752" height="1536" alt="Gemini_Generated_Image_i5ey1ei5ey1ei5ey" src="https://github.com/user-attachments/assets/543bef4b-0e7c-4f11-bcd5-75217c8d0a4e" />
 
 
-UCMDB SOFTWARE AUTHORIZATION & COMPLIANCE REPORT
-Script : ucmdb_software_compliance.py
-Target : Micro Focus / OpenText UCMDB v25.4 (REST API)
-Mode   : READ ONLY - the script never creates, updates or deletes any CI
 
+
+## UCMDB Software Authorization & Compliance Report
+
+🔹 Script : ucmdb_software_compliance.py
+🔹 Target : Micro Focus / OpenText UCMDB v25.4 (REST API)
+🔹 Mode   : READ ONLY - the script never creates, updates or deletes any CI
 
 --------------------------------------------------------------------------------
 1. PURPOSE
