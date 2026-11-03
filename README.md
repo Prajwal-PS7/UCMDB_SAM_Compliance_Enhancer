@@ -24,11 +24,16 @@
 **Notes** <br/>
  🔹 Authorization uses the EXACT version text (26.01 stays 26.01). <br/>
  🔹 Compliance compares versions number by number, e.g. <br/>
-        ```bash 
-        10,2,0,7549  ->  10.2.0.7549 <br/>
-        <tb/> 25.4.000.98  ->  25.4.0.98 <br/>
-    so 25.10 is correctly newer than 25.4. 
-        ```
+      ```bash
+   10,2,0,7549  ->  10.2.0.7549
+   ```
+      ```bash
+   25.4.000.98  ->  25.4.0.98
+   ```
+     ```bash
+    so 25.10 is correctly newer than 25.4.
+    ```
+   
  🔹 Name matching is case-insensitive. An exact name matches, and so does a prefix: "7-Zip 26.01 (x64)" matches the catalog entry "7-Zip". <br/>
  🔹 Software that cannot be linked to a computer is NOT marked Unauthorized. It is listed separately as "unresolved". <br/>
 
