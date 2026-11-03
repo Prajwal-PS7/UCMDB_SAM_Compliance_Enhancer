@@ -50,11 +50,12 @@ Node  --(Composition)-->  InstalledSoftware         (required)
 Node  --(Containment)-->  IpAddress                 (optional, for IPs)
 ```
 
-Query layout - attributes that must be returned
+**Query layout - attributes that must be returned**
+```
     Node               name, primary_dns_name, serial_number
     InstalledSoftware  name, display_label, version, publisher (publisher is optional)
     IpAddress          name
-
+```
 Other settings
   - Query node label of the pagination root must be exactly "InstalledSoftware" (this is the TQL node label, not the CI type name).
   - Make sure relationships are included in the query result. Without relations the script cannot link software to computers.
