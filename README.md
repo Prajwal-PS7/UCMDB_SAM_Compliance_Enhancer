@@ -17,11 +17,8 @@
 ## 2. HOW THE DECISIONS ARE MADE (VERSION BASED)
 
 * **AUTHORIZED**    : Software is in the catalog AND the installed version exactly matches one of its "approved_versions".
-
 * **UNAUTHORIZED**  : Software is not in the catalog, OR its version is not in the approved list, OR the version is missing.
-
 * **COMPLIANT**     : Software is in the catalog AND installed version is greater than or equal to "min_version" (updated version).
-
 * **NON-COMPLIANT** : Installed version is lower than "min_version" (outdated), OR software is not in the catalog, OR version is missing.
 
 Notes
