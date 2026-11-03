@@ -45,9 +45,9 @@
 
 **Create (or verify) a TQL named:**   ```software_version_compliance```
 **Required structure**
-```    Node  --(Composition)-->  InstalledSoftware         (required) <br/>
-    Node  --(Containment)-->  IpAddress                 (optional, for IPs)
-```
+```Node  --(Composition)-->  InstalledSoftware         (required) ```
+<br/>
+``` Node  --(Containment)-->  IpAddress                 (optional, for IPs)```
 Query layout - attributes that must be returned
     Node               name, primary_dns_name, serial_number
     InstalledSoftware  name, display_label, version, publisher (publisher is optional)
