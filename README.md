@@ -199,7 +199,7 @@ All files are written next to the script. ```<stamp> = YYYYMMDD_HHMMSS```.
   >       - The version must match the approved_versions text exactly.
 
 **Problem: Many records in the Unresolved sheet**
-  > Fix:   "software name missing" -> software name attribute is not in the          layout. "no computer relation found" -> the TQL does not return the Node for those records.
+  > Fix:   "software name missing" -> software name attribute is not in the layout. "no computer relation found" -> the TQL does not return the Node for those records.
 
 **Problem: No .xlsx file produced**
   > Fix:   Run  pip install openpyxl  and run the script again. CSV and JSON files are still created without it.
