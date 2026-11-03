@@ -178,56 +178,50 @@ All files are written next to the script. ```<stamp> = YYYYMMDD_HHMMSS```.
 **Problem: "TLS certificate verification failed"**
   > Fix:   Set VERIFY_SSL to True and install the server certificate chain, or set VERIFY_SSL to the path of a CA bundle file.
 
-Problem: HTTP 401 on authenticate
-  Fix:   Wrong username/password, or the account is locked. Check USERNAME and the password / UCMDB_PASSWORD value.
+**Problem: HTTP 401 on authenticate**
+  > Fix:   Wrong username/password, or the account is locked. Check USERNAME and the password / UCMDB_PASSWORD value.
 
-Problem: HTTP 403 on topology
-  Fix:   The user lacks permission to run the TQL or use the REST API.
+**Problem: HTTP 403 on topology**
+  > Fix:   The user lacks permission to run the TQL or use the REST API.
 
-Problem: HTTP 400 / 404 on topology
-  Fix:   Check TQL_NAME and PAGINATION_ROOT. PAGINATION_ROOT must be the TQL node label ("InstalledSoftware"), not the CI type.
+**Problem: HTTP 400 / 404 on topology**
+  > Fix:   Check TQL_NAME and PAGINATION_ROOT. PAGINATION_ROOT must be the TQL node label ("InstalledSoftware"), not the CI type.
 
-Problem: "WARNING: the query returned NO relations"
-  Fix:   The TQL has no Node -> InstalledSoftware link, or relations are not included in the layout. Fix the TQL; hostnames/IP/serial cannot be filled until relations are returned.
+**Problem: "WARNING: the query returned NO relations"**
+  > Fix:   The TQL has no Node -> InstalledSoftware link, or relations are not included in the layout. Fix the TQL; hostnames/IP/serial cannot be filled until relations are returned.
 
-Problem: Hostname, IP or serial is blank
-  Fix:   The attribute is not in the query layout, or has a different name. Open raw_chunks\chunk_001.json, find the real attribute name and add it to HOST_NAME_ATTRS / SERIAL_ATTRS / IP_ATTRS_* in the script.
+**Problem: Hostname, IP or serial is blank**
+  > Fix:   The attribute is not in the query layout, or has a different name. Open raw_chunks\chunk_001.json, find the real attribute name and add it to HOST_NAME_ATTRS / SERIAL_ATTRS / IP_ATTRS_* in the script.
 
-Problem: Software shows as Unauthorized but should be approved
-  Fix:   Compare the name and version in the report with the catalog.
-         - Add an alias if UCMDB shows a different name.
-         - The version must match the approved_versions text exactly.
+**Problem: Software shows as Unauthorized but should be approved**
+  > Fix:   Compare the name and version in the report with the catalog.
+  >       - Add an alias if UCMDB shows a different name.
+  >       - The version must match the approved_versions text exactly.
 
-Problem: Many records in the Unresolved sheet
-  Fix:   "software name missing" -> software name attribute is not in the          layout. "no computer relation found" -> the TQL does not return the Node for those records.
+**Problem: Many records in the Unresolved sheet**
+  > Fix:   "software name missing" -> software name attribute is not in the          layout. "no computer relation found" -> the TQL does not return the Node for those records.
 
-Problem: No .xlsx file produced
-  Fix:   Run  pip install openpyxl  and run the script again. CSV and JSON files are still created without it.
+**Problem: No .xlsx file produced**
+  > Fix:   Run  pip install openpyxl  and run the script again. CSV and JSON files are still created without it.
 
-Problem: Report shows noise (updates, runtimes)
-  Fix:   Add text fragments to IGNORE_NAME_PATTERNS.
+**Problem: Report shows noise (updates, runtimes)**
+  > Fix:   Add text fragments to IGNORE_NAME_PATTERNS.
 
---------------------------------------------------------------------------------
-10. SECURITY NOTES
---------------------------------------------------------------------------------
+## 10. SECURITY NOTES
   - The script is read only; it never writes to UCMDB.
   - The password is never stored or printed. The session token and query result IDs are not displayed.
   - Do not leave VERIFY_SSL = False in production.
   - Do not hard-code the password in the script. Use the prompt or the environment variable.
   - Reports contain hostnames, IPs and serial numbers. Store and share them according to your data-handling rules.
 
---------------------------------------------------------------------------------
-11. KNOWN LIMITATIONS
---------------------------------------------------------------------------------
+## 11. KNOWN LIMITATIONS
   - This is a custom script and is not part of the standard UCMDB / SAM product.
   - Software type and subscription type come from the catalog, not from UCMDB.
   - Compliance here means version compliance (installed version vs minimum version). It is NOT SAM license-entitlement compliance.
   - Results are produced as reports only; nothing is written back to UCMDB.
   - Only software that the TQL returns is evaluated.
 
---------------------------------------------------------------------------------
-12. QUICK START CHECKLIST
---------------------------------------------------------------------------------
+## 12. QUICK START CHECKLIST
   [ ] Python 3.8+ installed; pip install requests urllib3 openpyxl
   [ ] TQL software_version_compliance created with relations and attributes
   [ ] SERVER_URL, USERNAME, TQL_NAME set in the script
