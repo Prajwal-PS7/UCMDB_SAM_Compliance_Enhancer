@@ -132,8 +132,6 @@
   > Linux:
   ```
     export UCMDB_PASSWORD='your_password'
-  ```
-  ```
     python3 ucmdb_software_compliance.py
   ```
 
@@ -146,10 +144,9 @@ Exit codes
     130  interrupted by the user (Ctrl+C)
 ```
 
---------------------------------------------------------------------------------
-8. OUTPUT FILES
---------------------------------------------------------------------------------
-All files are written next to the script. <stamp> = YYYYMMDD_HHMMSS.
+## 8. OUTPUT FILES
+
+All files are written next to the script. ```<stamp> = YYYYMMDD_HHMMSS```.
 
   software_compliance_report_<stamp>.xlsx   Main report (needs openpyxl)
       Sheets:
