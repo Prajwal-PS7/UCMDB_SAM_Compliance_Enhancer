@@ -21,11 +21,11 @@
 * **COMPLIANT**     : Software is in the catalog AND installed version is greater than or equal to "min_version" (updated version).
 * **NON-COMPLIANT** : Installed version is lower than "min_version" (outdated), OR software is not in the catalog, OR version is missing.
 
-**Notes**
+**Notes** <br/>
  🔹 Authorization uses the EXACT version text (26.01 stays 26.01). <br/>
  🔹 Compliance compares versions number by number, e.g. <br/>
-        <t/>10,2,0,7549  ->  10.2.0.7549 <br/>
-        25.4.000.98  ->  25.4.0.98 <br/>
+        <tb/> 10,2,0,7549  ->  10.2.0.7549 <br/>
+        <tb/> 25.4.000.98  ->  25.4.0.98 <br/>
     so 25.10 is correctly newer than 25.4. 
  🔹 Name matching is case-insensitive. An exact name matches, and so does a prefix: "7-Zip 26.01 (x64)" matches the catalog entry "7-Zip".
  🔹 Software that cannot be linked to a computer is NOT marked Unauthorized. It is listed separately as "unresolved".
