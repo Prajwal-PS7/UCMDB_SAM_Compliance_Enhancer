@@ -16,13 +16,13 @@
 
 ## 2. HOW THE DECISIONS ARE MADE (VERSION BASED)
 
-* **AUTHORIZED** :     Software is in the catalog AND the installed version exactly matches one of its "approved_versions".
+* **AUTHORIZED**    : <p> Software is in the catalog AND the installed version exactly matches one of its "approved_versions". </p>
 
-* **UNAUTHORIZED** :  Software is not in the catalog, OR its version is not in the approved list, OR the version is missing.
+* **UNAUTHORIZED**  : <p> Software is not in the catalog, OR its version is not in the approved list, OR the version is missing. </p>
 
-* **COMPLIANT** :    Software is in the catalog AND installed version is greater than or equal to "min_version" (updated version).
+* **COMPLIANT**     : <p> Software is in the catalog AND installed version is greater than or equal to "min_version" (updated version). </p>
 
-* **NON-COMPLIANT** :  Installed version is lower than "min_version" (outdated), OR software is not in the catalog, OR version is missing.
+* **NON-COMPLIANT** : <p> Installed version is lower than "min_version" (outdated), OR software is not in the catalog, OR version is missing. </p>
 
 Notes
   - Authorization uses the EXACT version text (26.01 stays 26.01).
