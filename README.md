@@ -36,7 +36,7 @@
 
 ## 3. REQUIREMENTS
   🔹 Python 3.8 or newer <br/>
-  🔹 Python packages:      pip install requests urllib3 <br/>
+  🔹 Python packages:      ```pip install requests urllib3``` <br/>
   🔹 Optional (Excel):     pip install openpyxl (without openpyxl the script still writes CSV and JSON, and prints a note) <br/>
   🔹 Network access from the machine running the script to the UCMDB server (default https://localhost.localdomain.com:8443) <br/>
   🔹 A UCMDB user with permission to call the REST API and run the TQL <br/>
