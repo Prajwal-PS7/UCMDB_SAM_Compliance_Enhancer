@@ -148,16 +148,20 @@ Exit codes
 
 All files are written next to the script. ```<stamp> = YYYYMMDD_HHMMSS```.
 
-  software_compliance_report_<stamp>.xlsx   Main report (needs openpyxl)
-      Sheets:
-        Software by Computer   one row per computer + software
-        Computer Summary       one row per computer with counts and status
-        Unauthorized           only Unauthorized rows
-        Non-Compliant          only Non-Compliant rows
-        Catalog                catalog used for this run
-        Unresolved             records that could not be attributed
-      Authorized / Compliant cells are green; Unauthorized / Non-Compliant cells are red. Header row is frozen and filterable.
+> software_compliance_report_<stamp>.xlsx   Main report (needs openpyxl)
 
+**Sheets:**
+```
+     Software by Computer   one row per computer + software
+     Computer Summary       one row per computer with counts and status
+     Unauthorized           only Unauthorized rows
+     Non-Compliant          only Non-Compliant rows
+     Catalog                catalog used for this run
+     Unresolved             records that could not be attributed
+```
+> Authorized / Compliant cells are green; Unauthorized / Non-Compliant cells are red. Header row is frozen and filterable.
+
+```
   software_compliance_detail_<stamp>.csv    Same as "Software by Computer"
   computer_summary_<stamp>.csv              Same as "Computer Summary"
   software_compliance_report_<stamp>.json   Full structured data per computer
@@ -165,8 +169,9 @@ All files are written next to the script. ```<stamp> = YYYYMMDD_HHMMSS```.
   software_summary.json                     Run totals and counts
   software_run_status.json                  running / completed / completed_with_warnings / failed / interrupted
   raw_chunks\chunk_NNN.json                 Raw server responses, kept for checking the TQL layout
+```
 
-"Computer Status" in the summary is Compliant only when every software item on that computer is both Authorized and Compliant.
+> "Computer Status" in the summary is Compliant only when every software item on that computer is both Authorized and Compliant.
 
 --------------------------------------------------------------------------------
 9. TROUBLESHOOTING / HELP
