@@ -3,7 +3,7 @@
 
 ## UCMDB Software Authorization & Compliance Report
 
-🔹 **Script** : ucmdb_software_compliance.py <br/>
+🔹 **Script** : script.py <br/>
 🔹 **Target** : Micro Focus / OpenText UCMDB v25.4 & upper (REST API) <br/>
 🔹 **Mode**   : READ ONLY - the script never creates, updates or deletes any CI <br/>
 
@@ -113,26 +113,26 @@
 
 ## 7. HOW TO RUN
 **Interactive (asks for the password; nothing is echoed):**
-```python ucmdb_software_compliance.py```
+```python script.py```
 
 **Unattended / scheduled run - set the password in the environment first.**
 
   > Windows (Command Prompt):
   ```
     set UCMDB_PASSWORD=your_password
-    python ucmdb_software_compliance.py
+    python script.py
   ```
 
   > Windows (PowerShell):
   ```
     $env:UCMDB_PASSWORD = "your_password"
-    python ucmdb_software_compliance.py
+    python script.py
   ```
 
   > Linux:
   ```
     export UCMDB_PASSWORD='your_password'
-    python3 ucmdb_software_compliance.py
+    python3 script.py
   ```
 
 *For scheduling use Windows Task Scheduler or cron. Prefer a secured secret store over a plain-text password where possible.*
